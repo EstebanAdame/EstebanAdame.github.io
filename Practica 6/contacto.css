@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: #E2B689;
+	text-align: center;
+
+}
+ul{
+	font-family: "Book Antiqua", "Palatino";
+	font-size: 16px;
+	padding: 10px;
+	text-align: right;
+	color: #693A0C;
+	list-style-type: none;
+}  
+ul li{
+	display: inline;
+	font-size: 17px;
+	padding: 10px;
+}
+img{
+	width: 20%;
+	height: 30%;
+	float: left;
+	padding-right: 20px;
+}
+#local{
+	padding-top: 50px;
+}
+#contac{
+	padding-top: 100px;
+}
+a{
+	color: #693A0C;
+	text-decoration: none;
+}
+a:hover{
+	color: #FFFFFF
+}
+#parr{
+	padding-top: 50px
+}
+#parr2{
+	padding-top: 150px
+}
