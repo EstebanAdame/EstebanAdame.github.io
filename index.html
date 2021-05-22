@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ESTEBAN ADAME</title>
+	<title>INDEX</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" href="logo.png">
 <body>
-	<div>
-		<p align="center" style="font-size: 24px;  fon">TEMAS SELECTOS DE SISTEMAS COMPUTACIONALES</p>
+	<div id="top">
+		<p id="main">TEMAS SELECTOS DE SISTEMAS COMPUTACIONALES</p>
+		<P id="main">ESTEBAN ADAME VALENZUELA</P>
+	</div>
+	<div id="practicas">
+		<UL>
+			<a href="Practica 1.html"><LI>PRACTICA 1</LI></a>
+			<a href="Vino.html"><LI>PRACTICA 2/3</LI></a>
+			<a href="PRACTICA5"><LI>PRACTICA 4/5</LI></a>
+			<a href="contacto.html"><LI>PRACTICA 6</LI></a>
+			<a href="Practica 7"><li>PRACTICA 7</li></a>
+			<a href="Practica9"><li>PRACTICA 8/9</li></a>
+		</UL>
+	</div>
+	<div align="center">
+		<a id="info" onMouseOver="mostrar()" onMouseOut="ocultar()"><h1>ACERCA DE MI</h1></a>
+		<p class="hidden" id="datos" style="font-size: 18px">
+			Hola me presento, soy Esteban Adame Valenzuela
+		</p>
+		<script type="text/javascript">
+			function mostrar(){ 
+				document.getElementById("datos").style.visibility="visible"; 
+ 				document.getElementById("info").style.visibility="hidden"; 
+ 			}	
+ 			function ocultar(){
+ 				document.getElementById("datos").style.visibility="hidden";
+ 				document.getElementById("info").style.visibility="visible";
+ 			}
+		</script>
 	</div>
 </body>
 </html>
