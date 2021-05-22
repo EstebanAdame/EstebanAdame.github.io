@@ -1,0 +1,60 @@
+@charset "utf-8"
+
+body{
+	background-color: #221D1A;
+}
+div{
+	background-color: #221D1A;
+	height: 110px;
+	width: 80%;
+	margin: 0 auto;
+
+}
+#div2{
+	margin: 0 auto;
+	background-color:#E6AD2A;
+	height: 800px;
+	width: 80%
+}
+#div3{
+	width: 80%
+	height: 200px;
+	background-color: #E6AD2A; 
+}
+#div4{
+	margin: 0 auto;
+	background-color: #221D1A;
+	width: 80%;
+	height: 1200px;
+}
+#img1{
+	width: 8%;
+	float: left;
+}
+#img2{
+	height: 100%;
+	width: 80%;
+}
+#img3{
+	height: 100px;
+	width: 100px;
+}
+ul{
+	font-family: "Book Antiqua", "Palatino";
+	font-size: 16px;
+	padding: 10px;
+	text-align: right;
+	color: #82690E;
+	list-style-type: none;
+}  
+ul li{
+	display: inline;
+	font-size: 17px;
+	padding: 10px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #FFFFFF;
+}
