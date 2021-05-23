@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: #E2B689;
+}
+ul{
+	font-family: "Book Antiqua", "Palatino";
+	font-size: 16px;
+	padding: 10px;
+	text-align: right;
+	color: #693A0C;
+	list-style-type: none;
+}  
+ul li{
+	display: inline;
+	font-size: 17px;
+	padding: 10px;
+}
+img{
+	width: 100%;
+}
+a{
+	color: #693A0C;
+	text-decoration: none;
+}
+a:hover{
+	color: #FFFFFF
+}
