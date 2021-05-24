@@ -6,6 +6,8 @@
 	<link rel="shortcut icon" href="logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
+	<audio autoplay="true" src="celeste.mp3" loop="true" id="audios">
+	</audio> 
 	<header id="top">
 		<hgroup>
 			<h1>TEMAS SELECTOS DE SISTEMAS COMPUTACIONALES</h1>
@@ -49,7 +51,27 @@
  			}
 		</script>
 	</div>
-		<footer> 
+	<section id = "multi">
+		<p>
+			A continuacion se presenta a un video que muestra la manera de mostrar en una pagina<br>
+			HTML una barra de carga sencilla para mostrar en pantalla el progreso que<br> 
+			lleva una tarea que se este realizando en la pagina. 
+		</p>
+		<video id="video" controls src="video.mp4" width="40%" onplay="reproducir()" onpause="pausar()"></video>
+		<script type="text/javascript">
+			function reproducir(){
+				if(!video.paused && !video.ended){
+					audios.pause();
+				}
+			}
+			function pausar(){
+				if(video.paused || video.ended){
+					audios.play();
+				}
+			}
+		</script>
+	</section>
+	<footer> 
  		<p>
  			<b>Información de contacto:</b><br>
 			Elaborado por: Esteban Adame Valenzuela</p> 
