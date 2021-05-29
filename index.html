@@ -6,7 +6,7 @@
 	<link rel="shortcut icon" href="logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
-	<audio autoplay="true" src="celeste.mp3" loop="true" id="audios">
+	<audio autoplay="true" src="celeste.mp3" loop="true" id="miaudio">
 	</audio> 
 	<header id="top">
 		<hgroup>
@@ -69,6 +69,8 @@
 					audios.play();
 				}
 			}
+  			var audio = document.getElementById("miaudio");
+  			audio.volume = 0.2;
 		</script>
 	</section>
 	<footer> 
