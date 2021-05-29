@@ -41,7 +41,6 @@ body{
 #info {background-color: #E06302;}
 
 #frontpage{
-	opacity: 0.5;
 	width: 40%;
 	border-style: solid;
 }
@@ -55,9 +54,21 @@ body{
 	text-align: center;
 }
 .notas{
-	width: 70%; 
+	overflow: auto;
+	width: 40%; 
 	height: auto; 
 	border-style: solid;
 	margin-bottom: 20px;
+	margin-right: 200px;
 	float: left;
+	transition: width 2s;
+}
+.notas:hover{
+width: 70%;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #FFFFFF;
 }

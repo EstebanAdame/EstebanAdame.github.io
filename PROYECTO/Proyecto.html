@@ -8,6 +8,7 @@
 	<title>PROYECTO FINAL</title>
 </head>
 <body>
+	<audio autoplay="true" src="musica.mp3" loop="true" id="miaudio"></audio>	
 	<header class="top">
 		<img src="imagenes/logo.png">
 	</header>
@@ -20,6 +21,7 @@
 	<div id="inicio" class="tabcontent" align="center">
   		<h2>Bienvenidos!!</h2>
   		<img src="imagenes/bajemos.jpg" id="frontpage">
+  		<p style="font-size: 18px;">Unete a nosotros y aprende a comer saludablemente!</p>
 	</div>
 
 	<div id="noticias" class="tabcontent">
@@ -30,8 +32,8 @@
 	  			Ya estas listo para bajarle a esos 100 kilos?
 	  		</p>
 	  	</div>
-	  	<div style="width: 70%; height: 120px; border-style: solid;float: right; text-align: center; margin-bottom: 20px;">
-	  		<img src="imagenes/keto.jpg" style="float: right; width: 150px;">
+	  	<div class="notas">
+	  		<img src="imagenes/keto.jpg" class="noticias">
 	  		<p>
 	  			Plan keto 28 días con Sonia Valenzuela.
 				Iniciamos este martes 11 de mayo
@@ -81,6 +83,8 @@
   		elmnt.style.backgroundColor = color;
 	}
 	document.getElementById("defaultOpen").click();
+	var audio = document.getElementById("miaudio");
+  	audio.volume = 0.4;
 </script>		
 </body>
 </html>
