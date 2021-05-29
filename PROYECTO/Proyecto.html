@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="imagenes/ensalada.png">
+	<title>PROYECTO FINAL</title>
+</head>
+<body>
+	<header class="top">
+		<img src="imagenes/logo.png">
+	</header>
+	<div class="menu">
+		<button class="tablink" onclick="openPage('inicio', this, '#BA5202')" id="defaultOpen">Inicio</button>
+		<button class="tablink" onclick="openPage('noticias', this, '#7A3601')">Noticias</button>
+		<button class="tablink" onclick="openPage('contacto', this, '#F96E02')">Contacto</button>
+		<button class="tablink" onclick="openPage('info', this, '#E06302')">Informacion</button>
+	</div>
+	<div id="inicio" class="tabcontent" align="center">
+  		<h2>Bienvenidos!!</h2>
+  		<img src="imagenes/bajemos.jpg" id="frontpage">
+	</div>
+
+	<div id="noticias" class="tabcontent">
+	  	<h3>Noticias</h3>
+	  	<div class="notas">
+	  		<img src="imagenes/bajale.jpg" class="noticias">
+	  		<p>
+	  			Ya estas listo para bajarle a esos 100 kilos?
+	  		</p>
+	  	</div>
+	  	<div style="width: 70%; height: 120px; border-style: solid;float: right; text-align: center; margin-bottom: 20px;">
+	  		<img src="imagenes/keto.jpg" style="float: right; width: 150px;">
+	  		<p>
+	  			Plan keto 28 días con Sonia Valenzuela.
+				Iniciamos este martes 11 de mayo
+				4 semanas.
+	  		</p>
+	  	</div>
+	  	<div class="notas">
+	  		<img src="imagenes/mama.jpg" class="noticias">
+	  		<p>
+	  			3 meses de plan nutricional x 600 pesos!
+				Promoción vía internet
+	  		</p>
+	  	</div>
+	</div>
+
+	<div id="contacto" class="tabcontent" align="center">
+	  	<h2>Contacto</h2>
+	  	<img src="imagenes/personas.png" id="personas"><br>
+	  	<a href="https://www.facebook.com/bajemosjuntosmxli"> <img src="imagenes/facebook.png" class="redes"></a><br>
+	  	<img src="imagenes/whatsapp.png" class="redes"> 686 123-5132<br>
+	  	Correo: <a href="mailto: lnutricion.soniavalenzuela@gmail.com">lnutricion.soniavalenzuela@gmail.com </a>
+	</div>
+
+	<div id="info" class="tabcontent">
+	  	<h2>Informacion</h2>
+	  	Grupo Nutricional y Control de Peso.<br>
+		Aprende a comer rico y sano, controla tu peso y mejora tu salud con buenos hábitos alimenticios.<br>
+		Horario de atencion: 9:00am - 8:00pm<br>
+		Telefono: <a href="tel:+526861235132">686 123 5132</a><br> 
+		Localizacion: <a href="https://www.google.com/maps/dir/32.5765198,-115.4846562/32.5867512,-115.4726118/@32.5815042,-115.4866412,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
+			<img src="imagenes/local.png" class="redes">
+		</a>
+	</div>
+
+	<script>
+	function openPage(pageName,elmnt,color) {
+  		var i, tabcontent, tablinks;
+  		tabcontent = document.getElementsByClassName("tabcontent");
+  		for (i = 0; i < tabcontent.length; i++) {
+    		tabcontent[i].style.display = "none";
+  		}
+  		tablinks = document.getElementsByClassName("tablink");
+  		for (i = 0; i < tablinks.length; i++) {
+    		tablinks[i].style.backgroundColor = "";
+  		}
+  		document.getElementById(pageName).style.display = "block";
+  		elmnt.style.backgroundColor = color;
+	}
+	document.getElementById("defaultOpen").click();
+</script>		
+</body>
+</html>
